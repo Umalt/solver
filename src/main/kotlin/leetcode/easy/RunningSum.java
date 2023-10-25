@@ -2,7 +2,7 @@ package leetcode.easy;
 
 import java.util.Arrays;
 
-public class RunningSumSolution {
+public class RunningSum {
 
     public static void main(String[] args) {
         int[] nums = new int[] { 3, 1, 2, 10, 1 };
