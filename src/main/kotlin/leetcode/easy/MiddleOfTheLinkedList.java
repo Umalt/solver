@@ -12,13 +12,11 @@ public class MiddleOfTheLinkedList {
 
     private static ListNode middleNode(ListNode head) {
         ArrayList<ListNode> nodes = new ArrayList<>();
-        int length = 0;
         while (head != null) {
             nodes.add(head);
             head = head.next;
-            length++;
         }
-        return nodes.get(length / 2);
+        return nodes.get(nodes.size() / 2);
     }
 }
 
@@ -26,8 +24,6 @@ public class MiddleOfTheLinkedList {
 class ListNode {
     int val;
     ListNode next;
-
-    ListNode() {}
 
     ListNode(int val) {
         this.val = val;
